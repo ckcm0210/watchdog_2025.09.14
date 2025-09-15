@@ -1,0 +1,17 @@
+[xml crash] 20250915 105425 - 檔案名稱: Protected by Curtain-e-locker]
+編號(E) 編輯(E) 檢查(C) 檢視(V) 說明(H)
+
+XML
+子進程崩潰報告
+時間: 2025-09-15 10:54:25
+任務類型: read_values
+檔案路徑: D:\cache_folder\0351fe59fe0cc2e7\File.xlsx
+設定: max_workers=1, timeout=120.0s
+
+錯誤詳情:
+錯誤 1: RuntimeError
+訊息: 子進程失敗 (exit code=1): [xml-worker-2] execute task start type=read_values safe_mode=False
+[xml-worker-2] read_values start file=0351fe59fe0cc2e7 File.xlsx engine=polars_xml safe_m
+錯誤 2: RuntimeError
+訊息: 子進程失敗 (exit code=1): [xml-worker-3] execute task start type=read_values safe_mode=True
+[xml-worker-3] read_values start file=0351fe59fe0cc2e7 File.xlsx engine=polars_xml safe_mo
