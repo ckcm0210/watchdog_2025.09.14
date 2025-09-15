@@ -1,0 +1,45 @@
+python_crash_20250915_151338.log - 記事本 - (Protected by Curtain e-locker)
+
+有毒(?) 編輯(E) 程式(O) 儲存(V) 編輯(H)
+2025-09-15 15:13:38.836701
+
+Python 3.11.3 | packaged by Anaconda, Inc. | (main, Apr 19 2023, 23:46:34) [MSC v.1916 64 bit (AMD64)]
+Windows fatal exception: code 0x80000003
+
+Thread 0x00000784 (most recent call first):
+  File "C:\ProgramData\anaconda3\Lib\threading.py", line 294 in wait
+  File "C:\ProgramData\anaconda3\Lib\threading.py", line 622 in wait
+  File "C:\ProgramData\anaconda3\Lib\threading.py", line 192 in run
+  File "C:\ProgramData\anaconda3\Lib\threading.py", line 1038 in _bootstrap_inner
+  File "C:\ProgramData\anaconda3\Lib\threading.py", line 995 in _bootstrap
+
+Thread 0x00001744 (most recent call first):
+  File "C:\ProgramData\anaconda3\Lib\concurrent\futures\thread.py", line 81 in worker
+  File "C:\ProgramData\anaconda3\Lib\threading.py", line 975 in run
+  File "C:\ProgramData\anaconda3\Lib\threading.py", line 1038 in _bootstrap_inner
+  File "C:\ProgramData\anaconda3\Lib\threading.py", line 995 in _bootstrap
+
+Thread 0x00005a00 (most recent call first):
+  File "C:\ProgramData\anaconda3\Lib\concurrent\futures\thread.py", line 81 in worker
+  File "C:\ProgramData\anaconda3\Lib\threading.py", line 975 in run
+  File "C:\ProgramData\anaconda3\Lib\threading.py", line 1038 in _bootstrap_inner
+  File "C:\ProgramData\anaconda3\Lib\threading.py", line 995 in _bootstrap
+
+Current thread 0x0000526c (most recent call first):
+  Garbage-collecting
+  File "C:\ProtDir\KCHENG\watchdog_monitoring_v10\core\excel_parser.py", line 632 in dump excel cells with timeout
+  File "C:\ProtDir\KCHENG\watchdog_monitoring_v10\core\watch_event.py", line 294 in compare excel changes
+  File "C:\ProtDir\KCHENG\watchdog_monitoring_v10\core\watch_event.py", line 400 in modified
+  File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 272 in dispatch_events
+  File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 197 in run
+  File "C:\ProgramData\anaconda3\Lib\threading.py", line 1038 in _bootstrap_inner
+  File "C:\ProgramData\anaconda3\Lib\threading.py", line 995 in _bootstrap
+
+Thread 0x00005364 (most recent call first):
+  File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 339 in read directory changes
+  File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 91 in read events
+  File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 80 in _read_events
+  File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 148 in queue_events
+  File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 197 in run
+  File "C:\ProgramData\anaconda3\Lib\threading.py", line 1038 in _bootstrap_inner
+  File "C:\ProgramData\anaconda3\Lib\threading.py", line 995 in _bootstrap
