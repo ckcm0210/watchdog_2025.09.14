@@ -1,0 +1,36 @@
+python_crash_20250915_154135.log - 記事本 - Protected by Curtain e-locker
+檔案(E) 編輯(O) 格式(C) 檢視(H)
+程式碼範例: 2025-09-15 15:41:35.314905
+執行環境: 3.11.3 | packaged by Anaconda, Inc. | (main, Apr 19 2023, 23:46:34) [MSC v.1916 64 bit (AMD64)]
+記憶體: Standard Python
+
+Windows fatal exception: code 0x80000003
+
+Thread 0x0000656c (most recent call first):
+File "C:\ProgramData\anaconda3\Lib\concurrent\futures\thread.py", line 81 in _worker
+File "C:\ProgramData\anaconda3\Lib\threading.py", line 1038 in _bootstrap_inner
+File "C:\ProgramData\anaconda3\Lib\threading.py", line 995 in _bootstrap
+
+Thread 0x00005c70 (most recent call first):
+File "C:\ProgramData\anaconda3\Lib\concurrent\futures\thread.py", line 81 in _worker
+File "C:\ProgramData\anaconda3\Lib\threading.py", line 1038 in _bootstrap_inner
+File "C:\ProgramData\anaconda3\Lib\threading.py", line 995 in _bootstrap
+
+Current thread 0x0000026c (most recent call first):
+File "C:\ProtDir\KCCHENG\watchdog_monitoring_v10\core\excel_parser.py", line 632 in dump_excel_cells_with_timeout
+File "C:\ProtDir\KCCHENG\watchdog_monitoring_v10\core\baseline.py", line 241 in create_baseline_for_files_robust
+File "C:\ProtDir\KCCHENG\watchdog_monitoring_v10\core\watcher.py", line 248 in on_created
+File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\api.py", line 272 in dispatch
+File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\api.py", line 372 in dispatch_events
+File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\api.py", line 199 in run
+File "C:\ProgramData\anaconda3\Lib\threading.py", line 1038 in _bootstrap_inner
+File "C:\ProgramData\anaconda3\Lib\threading.py", line 995 in _bootstrap
+
+Thread 0x00004ae0 (most recent call first):
+File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 339 in read_directory_changes
+File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 391 in read_events
+File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\winapi.py", line 80 in _read_events
+File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 83 in queue_events
+File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\api.py", line 199 in run
+File "C:\ProgramData\anaconda3\Lib\threading.py", line 1038 in _bootstrap_inner
+File "C:\ProgramData\anaconda3\Lib\threading.py", line 995 in _bootstrap
