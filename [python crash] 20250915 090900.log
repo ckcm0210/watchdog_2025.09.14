@@ -1,0 +1,29 @@
+[python crash] 20250915 090900.log, 檔案名稱: Protected by Curtain-e-locker]
+Python 版本: 3.11.3 | 1 packaged by Anaconda, Inc. | (main, Apr 19 2023, 22:46:34) [MSC v.1916 64 bit (AMD64)]
+執行緒: Standard Python
+
+Windows fatal exception: code 0x80000003
+
+Thread 0x00000024 (most recent call first):
+File "C:\ProgramData\anaconda3\Lib\concurrent\futures\thread.py", line 81 in _worker
+File "C:\ProgramData\anaconda3\Lib\threading.py", line 975 in run
+File "C:\ProgramData\anaconda3\Lib\threading.py", line 1038 in _bootstrap_inner
+
+Current thread 0x000003bc (most recent call first):
+Garbage-collecting
+File "C:\ProgramData\anaconda3\Lib\xml\etree\ElementTree.py", line 1333 in XML
+File "C:\ProgramData\anaconda3\Lib\xml\etree\ElementTree.py", line 152 in read_values_from_xlsx_via_polars_xml
+File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\polars.py", line 440 in dump_excel_cell_with_timeout
+File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\monitoring_v2\core\watchdog_monitoring_v2_core.py", line 314 in compare_excel_changes
+File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\monitoring_v2\core\watchdog_monitoring_v2_core.py", line 410 in modified
+File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\events.py", line 272 in dispatch
+File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\api.py", line 372 in run
+File "C:\ProgramData\anaconda3\Lib\threading.py", line 1038 in _bootstrap_inner
+File "C:\ProgramData\anaconda3\Lib\threading.py", line 995 in _bootstrap
+
+Thread 0x00003258 (most recent call first):
+File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\windowsapi.py", line 330 in read_directory_changes
+File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\windowsapi.py", line 388 in _read_events
+File "C:\ProgramData\anaconda3\Lib\site-packages\watchdog\observers\windowsapi.py", line 148 in run
+File "C:\ProgramData\anaconda3\Lib\threading.py", line 1038 in _bootstrap_inner
+File "C:\ProgramData\anaconda3\Lib\threading.py", line 995 in _bootstrap
