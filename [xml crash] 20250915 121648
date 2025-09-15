@@ -1,0 +1,15 @@
+[xml crash] 20250915 121648 - 檔案名稱: Protected by Curtain-e-locker]
+編號(E) 編輯(E) 檢查(C) 檢視(V) 說明(H)
+
+XML
+子進程崩潰報告
+時間: 2025-09-15 12:16:48
+任務類型: read_values
+檔案路徑: D:\cache_folder\db7da73097a08594\Filea.xlsx
+設定: max_workers=1, timeout=120.0s
+
+錯誤詳情:
+錯誤 1: TypeError
+訊息: the JSON object must be str, bytes or bytearray, not NoneType
+錯誤 2: TypeError
+訊息: the JSON object must be str, bytes or bytearray, not NoneType
